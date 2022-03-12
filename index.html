@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<!-- Thanks to https://fjolt.com/article/meta-tag-ref-html-quick-start for the starting template-->
+<html>
+
+<head>
+  <title>Fashion Pressure 2022</title>
+  <!-- <link rel="icon" type="text/png" href="https://fashionpressure.org/favicon.png"> -->
+  <meta name=”description”
+    content="Interdisciplinarna studija mentalnog zdravlja, umjetnosti i industrije u promijenjenom svijetu">
+  <!-- <meta name="robots" content="index,follow"> -->
+  <!-- <meta name="keywords" content="tags,for,your,site"> -->
+  <link rel="canonical" href="URL for this page">
+
+  <meta property="og:title" content="Fashion Pressure 2022" />
+  <meta property="og:description"
+    content="Interdisciplinarna studija mentalnog zdravlja, umjetnosti i industrije u promijenjenom svijetu" />
+  <!-- <meta property="og:image" content="Image URL representing my website" /> -->
+  <meta property="og:url" content="https://fashionpressure.org" />
+  <meta property="og:site_name" content="Fashion Pressure" />
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{title}}">
+  <meta name="twitter:description" content="{{description}}">
+  <!-- <meta name="twitter:image" content="{{image}}"> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito&family=Work+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <header>
+    <a href="#"><span class="theme-color">[</span>FASHIONPRESSURE<span class="theme-color">]</span></a>
+    <a class="theme-border-hover theme-color-hover" href="#about">Opis</a>
+    <a class="theme-border-hover theme-color-hover" href="#join">Sudjeluj u projektu</a>
+    <a class="theme-border-hover theme-color-hover" href="#contact">Kontakt</a>
+    <a class="theme-bg donate-button hide"
+      title="Još radimo na tome! Molimo pretplatite se na naš newsletter.">Donirati</a>
+    <p>HR</p>
+  </header>
+
+  <main>
+    <section id="front">
+      <!-- Thanks to pexels.com for the model / mask videos -->
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="./assets/facemask.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop class="hide">
+          <source src="./assets/catwalk.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p>(dolazi uskoro)</p>
+      <h1>
+        Interdisciplinarna studija mentalnog zdravlja, umjetnosti i industrije u promijenjenom svijetu.
+      </h1>
+    </section>
+
+    <section class="theme-bg" id="about">
+      <h1>Opis</h1>
+      <div class="even-split">
+        <figure>
+          <img src="./assets/model-right.jpg" />
+          <figcaption>Photo by Mikhail Nilov from Pexels</figcaption>
+        </figure>
+        <div>
+          <p>Kroz interdisciplinaran pristup (spoj umjetnosti i znanstveno-istraživačkog rada iz područja psihologije i
+            zdravstva), želi se prikazati trenutno stanje mladih u području kreativne industrije, te pronaći korisna i
+            kreativna rješenja za poboljšanje njihovog mentalnog zdravlja. </p>
+          <p>Takvim aktivnostima želi se spriječiti daljnji razvoj poteškoća na koje nailaze mladi, ali i većina ostalih
+            građana, u ovom dobu definiranom globalnom situacijom izazvanom pandemijom i svim mjerama zaštite uvedenih
+            radi njezina sprječavanja.</p>
+        </div>
+      </div>
+      <div class="even-split">
+        <p class="big-one">Aktivnim multimedijalnim procesima, koji uspješno spajaju svijet kulture i umjetnosti, ali i
+          aktivnostima za
+          očuvanje psihičkog i fizičkog zdravlja, žele se ukloniti svi zdravstveni, socijalni ali i emocionalni
+          problemi, koji vidno sve više ometaju potpuno ostvarenje ljudskih potencijala. Projektnim aktivnostima
+          naglasiti će se važnost održavanja mentalnog zdravlja, omogućit će se aktivan život kroz međunarodnu i
+          međusektorsku suradnju i, ono najvažnije, poticat će se proaktivno promišljanje vlastitog identiteta u
+          vremenima kada taj pojam sve češće zadobiva karakteristike fluidnosti.</p>
+        <figure>
+          <img src="./assets/model-stairs2.jpg" />
+          <figcaption>Photo by Edmond Dantès from Pexels</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="theme-bg" id="join">
+      <h1>Sudjeluj u projektu</h1>
+      <div class="even-split">
+        <figure>
+          <img src="./assets/model-stairs.jpg" />
+          <figcaption>Photo by Edmond Dantès from Pexels</figcaption>
+        </figure>
+        <form>
+          <select class="full-width" id="role">
+            <option value="1">Volonter</option>
+            <option value="">Casting</option>
+          </select>
+          <div class="question-container">
+            <label>Ime: <input id="firstname"></label>
+            <label>Prezime: <input id="surname"></label>
+            <label class="full-width volunteer-only" id="email">E-Mail: <input></label>
+            <label class="full-width volunteer-only" id="address">Adresa: <input></label>
+            <label class="full-width volunteer-only" id="phone">Broj telefona: <input type="tel"></label>
+            <label class="full-width" id="birthdate">Datum rodenja: <input type="date"></label>
+            <label class="full-width volunteer-only" id="participation">Koliko sati tjedno možeš izdvojiti?: <input
+                type="number">
+            </label>
+            <label class="full-width volunteer-only" id="history">Prijašnje radno iskustvo ili volontiranje?:
+              <textarea></textarea>
+            </label>
+            <label class="full-width volunteer-only" id="motivation">Motivacija za prijavu:
+              <textarea></textarea>
+            </label>
+            <label class="full-width volunteer-only" id="skills">Koje su tvoja znanja i vještine?:
+              <textarea></textarea>
+            </label>
+            <div class="casting-only">
+              <p class="full-width">Mjere:</p>
+              <label class="casting-only" id="height">Visina: <input type="number" placeholder="cm"></label>
+              <label class="casting-only" id="weight">Težina: <input type="number" placeholder="kg"></label>
+              <label class="casting-only" id="chest">Grudi: <input type="number" placeholder="cm"></label>
+              <label class="casting-only" id="waist">Struk: <input type="number" placeholder="cm"></label>
+              <label class="casting-only" id="hips">Bokovi: <input type="number" placeholder="cm"></label>
+              <label class="casting-only" id="shoesize">Broj obuće: <input type="number"></label>
+              <label class="casting-only full-width" id="confection">Konfekcijski broj: <input></label>
+              <label class="casting-only" id="eyecolor">Boja očiju: <input></label>
+              <label class="casting-only" id="haircolor">Boja kose: <input></label>
+              <label class="casting-only full-width" id="experience">Radno iskustvo: <textarea></textarea></label>
+              <label class="casting-only" id="agency">Agencija: <input></label>
+              <label class="casting-only" id="agent">Agent: <input></label>
+              <label class="casting-only full-width" id="agent">Kontakt agencije/agenta: <input type="tel"></label>
+              <label class="casting-only full-width" id="images">3 Fotografije: <input type="file"></label>
+            </div>
+          </div>
+
+          <input type="submit" value="Podnijeti">
+        </form>
+      </div>
+    </section>
+
+    <section class="theme-bg" id="contact">
+      <h1>Kontakt</h1>
+      <div class="even-split">
+        <form>
+          <select class="full-width" id="role">
+            <option>Donator</option>
+            <option>Sponzor</option>
+            <option>Odnosi s javnošću</option>
+          </select>
+          <div class="question-container">
+            <label>Ime: <input id="firstname"></label>
+            <label>Prezime: <input id="surname"></label>
+            <label class="full-width" id="email">E-Mail: <input></label>
+            <label class="full-width" id="phone">Broj telefona: <input type="tel"></label>
+            <label class="full-width" id="message">Poruka: <textarea></textarea></label>
+          </div>
+
+          <input type="submit" value="Podnijeti">
+        </form>
+        <figure>
+          <img src="./assets/handshake.jpg" />
+          <figcaption>Photo by Branimir Balogović from Pexels</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="theme-bg">
+    © 2022 Fashion Pressure
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

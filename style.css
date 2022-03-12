@@ -1,0 +1,270 @@
+/* Thanks to https://www.digitalocean.com/community/tutorials/css-minimal-css-reset for the reset code */
+
+html {
+  box-sizing: border-box;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background: #444;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  color: #fff;
+  transform: none;
+  transition: transform 250ms linear;
+  background: #0004;
+  backdrop-filter: blur(10px);
+  z-index: 2;
+}
+
+header.unseen {
+  transform: translateY(-100%);
+}
+
+header a:first-of-type {
+  flex: 1;
+  white-space: nowrap;
+  font-size: 2em;
+  font-family: 'Montserrat', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+}
+
+header a {
+  font-weight: bold;
+  padding: 10px 20px;
+  border-bottom: 5px solid transparent;
+}
+
+header a.donate-button {
+  border: none;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition: opacity 100ms linear, transform 100ms linear;
+}
+
+header a.donate-button:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+header p {
+  margin-left: 20px;
+  padding: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+  border-radius: 100%;
+  border: 3px solid #fff;
+}
+
+main {
+  background: #0008;
+  font-size: 1.25em;
+  color: #323232;
+}
+
+main figcaption {
+  font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+  color: #4b4b4b;
+}
+
+main section {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+main section h1 {  
+  font-size: 2em;
+  font-weight: bold;
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+main section .even-split {
+  padding: 0 50px 50px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main section .even-split > * {
+  flex: 1
+}
+
+main section .even-split img {
+  max-width: 100%
+}
+
+main #front {
+  position: relative;
+}
+
+main #front h1 {
+  position: absolute;
+  bottom: 2em;
+  padding: 0 10%;
+  color: #fff;
+}
+
+main #front p {
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  color: #fff6;
+}
+
+main #front .video-container {
+  position: fixed;
+  top: -75%;
+  left: -50%;
+  width: 200%;
+  height: 300%;
+  z-index: -1;
+  filter: blur(5px);
+}
+
+main #front video {
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+main #about p {
+  padding: 0 0 25px 50px;
+}
+
+main #about p.big-one {
+  padding: 0 50px 25px 0;
+}
+
+body.show-volunteer-questions .casting-only {
+  display: none;
+}
+
+body:not(.show-volunteer-questions) .volunteer-only {
+  display: none;
+}
+
+main form {
+  padding: 0 50px;
+}
+
+main form div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main form div label {
+  min-width: 40%;
+  flex: 0.5;
+  padding: 25px 10px 0 10px;
+  color: #666;
+}
+
+main form div .full-width {
+  flex: 1;
+  min-width: 90%;
+}
+
+main form p {
+  padding-top: 25px;
+}
+
+main select, main input, main textarea {
+  width: 100%;
+  background: #fff6;
+  color: #000;
+}
+main select, main input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+main textarea {
+  background: #fff6
+}
+
+main form input[type="submit"] {
+  margin-top: 25px;
+  padding: 25px;
+}
+main form input[type="submit"]:hover {
+  cursor: pointer;
+  background: #fffa;
+}
+
+footer {
+  padding: 50px 25px;
+  font-size: 1.5em;
+}
+
+body.red .theme-border, body.red .theme-border-hover:hover {
+  border-color: #ff000d;
+}
+body.red .theme-color, body.red .theme-color-hover:hover {
+  color: #ff000d;
+}
+body.red .theme-bg, body.red .theme-bg-hover:hover {
+  background: #ff000d;
+}
+body.red .theme-bg-alpha {
+  background: #ff000d88;
+}
+body.red section.theme-bg {
+  background: #edd;
+}
+
+body.blue .theme-border, body.blue .theme-border-hover:hover {
+  border-color: #0074ff;
+}
+body.blue .theme-color, body.blue .theme-color-hover:hover {
+  color: #0074ff;
+}
+body.blue .theme-bg, body.blue .theme-bg-hover:hover {
+  background: #0074ff;
+}
+body.blue .theme-bg-alpha {
+  background: #0074ff88;
+}
+body.blue section.theme-bg {
+  background: #dde;
+}
+
+body.green .theme-border, body.green .theme-border-hover:hover {
+  border-color: #8bbd00;
+}
+body.green .theme-color, body.green .theme-color-hover:hover {
+  color: #8bbd00;
+}
+body.green .theme-bg, body.green .theme-bg-hover:hover {
+  background: #8bbd00;
+}
+body.green .theme-bg-alpha {
+  background: #8bbd0088;
+}
+body.green section.theme-bg {
+  background: #ded;
+}
+
+.hide {display: none;}
