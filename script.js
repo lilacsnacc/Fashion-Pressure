@@ -26,9 +26,25 @@ window.addEventListener('load', () => {
     }))
   setInterval(() => document.querySelectorAll('video').forEach(videoElem => videoElem.classList.toggle('hide')), 5000)
 
-  const showQuestions = () => document.body.classList.toggle('show-volunteer-questions', document.querySelector('main form #role')?.value)
+  const showQuestions = () => document.body.classList.toggle('show-volunteer-questions', document.querySelector('main form #role').value === 'Volonter')
   document.querySelector('main form #role').addEventListener('change', showQuestions)
   showQuestions()
+
+  // const onVolonterSubmit = () => {
+
+  // }
+
+  // document.querySelector('.join-form').addEventListener('submit', ev => {
+  //   ev.preventDefault()
+  //   console.log(ev.currentTarget)
+  //   const formData = new FormData(ev.currentTarget)
+  //   const keys = formData.keys()
+  //   for(var pair of formData.entries()) {
+  //     console.log(pair[0]+ ', '+ pair[1]);
+  //  }
+    
+  //   console.log(ev, [...formData])
+  // })
 
   document.body.classList.add('ready')
 })

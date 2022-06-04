@@ -38,8 +38,13 @@
     <a class="theme-border-hover theme-color-hover" href="#about">Opis</a>
     <a class="theme-border-hover theme-color-hover" href="#join">Sudjeluj u projektu</a>
     <a class="theme-border-hover theme-color-hover" href="#contact">Kontakt</a>
-    <a class="theme-bg donate-button hide"
-      title="Još radimo na tome! Molimo pretplatite se na naš newsletter.">Donirati</a>
+    <a
+      class="theme-bg donate-button"
+      href="https://www.paypal.com/us/non-profit/fundraising/fundraising-online"
+      title="Još radimo na tome! Molimo pretplatite se na naš newsletter."
+    >
+      Donirati
+    </a>
     <p>HR</p>
   </header>
 
@@ -98,15 +103,19 @@
           <img src="./assets/model-stairs.jpg" />
           <figcaption>Photo by Edmond Dantès from Pexels</figcaption>
         </figure>
-        <form>
-          <select class="full-width" id="role">
-            <option value="1">Volonter</option>
-            <option value="">Casting</option>
+        <form
+          class="join-form"
+          method="post"
+          action="https://script.google.com/macros/s/AKfycbxYBSUuJh8heh-3cjCZMdQu0OBDN7MyUoWKDnmNJe1ooyjYii_iyom2uVZzAonAvBfTIg/exec"
+        >
+          <select class="full-width" id="role" name="Role">
+            <option>Volonter</option>
+            <option>Casting</option>
           </select>
           <div class="question-container">
-            <label>Ime: <input id="firstname"></label>
-            <label>Prezime: <input id="surname"></label>
-            <label class="full-width volunteer-only" id="email">E-Mail: <input></label>
+            <label>Ime: <input name="firstname" id="Name"></label>
+            <label>Prezime: <input name="surname" id="Surname"></label>
+            <label class="full-width volunteer-only" id="email">E-Mail: <input name="Email"></label>
             <label class="full-width volunteer-only" id="address">Adresa: <input></label>
             <label class="full-width volunteer-only" id="phone">Broj telefona: <input type="tel"></label>
             <label class="full-width" id="birthdate">Datum rodenja: <input type="date"></label>
@@ -149,7 +158,7 @@
     <section class="theme-bg" id="contact">
       <h1>Kontakt</h1>
       <div class="even-split">
-        <form>
+        <form class="contact-form">
           <select class="full-width" id="role">
             <option>Donator</option>
             <option>Sponzor</option>
