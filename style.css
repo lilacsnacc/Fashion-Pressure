@@ -219,6 +219,10 @@ footer {
   font-size: 1.5em;
 }
 
+footer span {
+  font-size: 0.5em;
+}
+
 body.red .theme-border, body.red .theme-border-hover:hover {
   border-color: #ff000d;
 }
